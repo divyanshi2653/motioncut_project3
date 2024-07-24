@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color:rgb(24, 24, 24);
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navbar-collapse .navbar-brand{
+    color: rgb(255, 0, 247);
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px white;
+    transition: 0.5s;
+}
+.navbar-collapse .navbar-brand:hover{
+    color: rgb(254, 6, 238);
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 12px white;
+    transition: 0.5s;
+}
+.navbar-collapse a{
+    color: white;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+.home-pg{
+    background-image: linear-gradient(rgb(0, 0, 0,0.1), rgb(0, 0, 0,0.5), rgb(0, 0, 0,1)), url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 12px rgb(206, 206, 206);  
+}
+.home-pg h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 1px 20px rgb(250, 6, 250);
+}
+.navbar-collapse button {
+    background-color: rgb(255, 0, 251);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 16px;
+    transition: 0.5s;
+}
+.navbar-collapse button:hover {
+    background-color: rgb(255, 0, 242);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 20px white;
+    transition: 0.5s;
+}
+.navbar-collapse ul li a:hover {
+    color: rgb(251, 0, 255);
+    border-bottom: 1px solid rgb(212, 0, 255);
+    text-shadow: 2px 2px 10px white;
+    transition: 1s;
+}
+.navbar-collapse ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: 1s;
+}
+#product .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px;
+    text-align: center;
+    overflow: hidden;
+    gap: 40px 0px;
+}
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#product .row .card img{
+    width: 100%;
+    height: 100%;
+}
+#product .row .card{
+    border-radius: 16px;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+#product .row .card a{
+    background-color: rgb(238, 0, 255);
+    color: black;
+    border: 0;
+    box-shadow: 1px 1px 10px black;
+    font-weight: bold;
+}
+#product .row .card a:hover{
+    background-color: rgb(255, 0, 204);
+    color: black;
+    box-shadow: 1px 1px 16px black;
+}
+.product-name{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 0, 234);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px white;
+    transition: 0.5s;
+}
+.product-name:hover{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(24, 24, 24);
+    color: rgb(225, 0, 255);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 12px white;
+    cursor: default;
+    transition: 0.5s;
+}
+#about h1{
+    color:rgb(255, 0, 251);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 12px white;
+}
+#about{
+    background-image: linear-gradient(rgba(85, 53, 53, 0.9), rgb(0, 0, 0,0.5), rgb(0, 0, 0,0.1)), url(img5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+#about p{
+    color: rgb(0, 0, 0) !important;
+    font-size: 25px;
+    width: 800px;
+    text-wrap: wrap;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#about div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+    margin-left: 6rem;
+}
+.aboutus-name{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(17, 17, 17);
+    color: rgb(238, 0, 255);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px white;
+    transition: 0.5s;
+}
+.aboutus-name:hover{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 0, 251);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 12px rgb(255, 255, 255);
+    cursor: default;
+    transition: 0.5s;
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.social-media li {
+    display: inline;
+}
+.social-media a {
+    text-decoration: none;
+    color: #f8f8f9;
+}
+.contact-name{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 0, 221);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px white;
+    transition: 0.5s;
+}
+.contact-name:hover{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 0, 204);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 12px white;
+    cursor: default;
+    transition: 0.5s;
+}
+.form{
+    color: rgb(238, 0, 255);
+}
+.form button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgb(251, 0, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    box-shadow: 0px 1px 12px rgb(206, 206, 206);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px white;
+    margin: 10px;
+}
+.form button:hover{
+    width: 90%;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgb(247, 0, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    box-shadow: 0px 1px 20px rgb(206, 206, 206);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 6px white;
+    margin: 10px;
+}
+.form label{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.CartBtn {
+    margin-left: 33%;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(255, 0, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+  
+  .icon {
+    border-radius: 1px;
+  }
+  
+  .text {
+    margin-top: 10%;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+  }
+  
+  .CartBtn:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+
+#contact{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.details{
+    color: rgb(255, 0, 208);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 16px white;
+}
+@media screen and (max-width: 768px) {
+    *{
+        scroll-behavior: smooth;
+    }
+    body{
+        width: 100%;
+    }
+    .navbar{
+        background-color: rgb(20, 20, 20);
+        position: sticky !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .navbar-collapse .navbar-brand{
+        color: rgb(255, 0, 200);
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    
+    .navbar-nav > li > a{
+        font-size: 18px;
+    }
+    .home-pg {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 1)), url(top-indian-food-in-dubai.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 1px 12px rgb(206, 206, 206);
+    }
+    .home-pg h1 {
+        font-size: 80px;
+        color: white;
+        text-shadow: 0px 1px 20px rgb(255, 0, 170);
+    }
+    .product-name {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: rgb(24, 24, 24);
+        color: rgb(255, 0, 191);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    .aboutus-name {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: rgb(17, 17, 17);
+        color: rgb(255, 0, 217);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    
+    #about div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 10px;
+        width: 50%;
+        margin-left: 4rem;
+    }
+    .contact-name {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: rgb(19, 19, 19);
+        color: rgb(255, 0, 221);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    #about p {
+        color: #000 !important;
+        font-size: 18px;
+        width: 450px;
+        text-wrap: wrap;
+    }
+    .details {
+        color: rgb(255, 0, 234);
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 16px white;
+    }
+    .form {
+        color: rgb(255, 0, 247);
+        font-size: 15px;
+    }
+    #contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 425px) {
+    body{
+        width: 100%;
+        scroll-behavior: smooth;
+    }
+    .navbar{
+        background-color: rgb(20, 20, 20);
+        position: sticky !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .navbar-collapse .navbar-brand{
+        color: rgb(247, 0, 255);
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px white;
+    }
+    .navbar-collapse .btn{
+        display: none;
+    }
+    .navbar-nav > li > a{
+        font-size: 12px;
+    }
+    .home-pg {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 1)), url(top-indian-food-in-dubai.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 1px 12px rgb(206, 206, 206);
+    }
+    .home-pg h1 {
+        font-size: 55px;
+        color: white;
+        text-shadow: 0px 1px 20px rgb(106, 0, 255);
+    }
+    .product-name {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgb(24, 24, 24);
+        color: rgb(34, 0, 255);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    .aboutus-name {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgb(17, 17, 17);
+        color: rgb(81, 0, 255);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    
+    #about div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 10px;
+        width: 50%;
+        margin-left: 4rem;
+    }
+    .contact-name {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgb(19, 19, 19);
+        color: rgb(81, 0, 255);
+        text-transform: uppercase;
+        text-shadow: 1px 1px 4px white;
+    }
+    #about p {
+        color: rgb(0, 0, 0) !important;
+        font-size: 15px;
+        width: 300px;
+        text-wrap: wrap;
+    }
+    .details {
+        color: rgb(98, 0, 255);
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 16px white;
+    }
+    .form {
+        color: rgb(81, 0, 255);
+        font-size: 15px;
+    }
+    #contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding: 12px;
+    }
+    .social-media {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+    }
+    .social-media li {
+        display: inline;
+    }
+    .social-media a {
+        text-decoration: none;
+        color: #e74c3c;
+    }
+}
+#footter
+{
+   text-align: center;
+    background-color: rgb(254, 53, 194); color: rgb(7, 0, 0);
+}
+
+
